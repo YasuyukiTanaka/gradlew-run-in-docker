@@ -4,7 +4,7 @@
 task=$1
 workingDirectory=$2
 
-cd ${GITHUB_WORKSPACE}/{workingDirectory}
+cd ${GITHUB_WORKSPACE}/${workingDirectory}
 
 
 ./gradlew $task
