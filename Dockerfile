@@ -4,7 +4,7 @@ FROM ubuntu:16.04
 RUN \
   apt-get update && \
   apt-get upgrade -y && \
-  apt-get install --no-install-recommends -y openjdk-8;
+  apt-get install --no-install-recommends -y openjdk-8-jdk;
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 711 /entrypoint.sh
